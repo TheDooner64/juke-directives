@@ -1,8 +1,8 @@
 <div>
 	<h3>{{ playlist.name }}</h3>
-	<table class='table' ng-show="playlist.songs.length">
+	<div ng-show="playlist.songs.length">
 		<my-songs songs = "playlist.songs"></my-songs>
-	</table>
+	</div>
 	<small ng-hide="playlist.songs.length">No songs.</small>
 	<hr>
 	<div ng-controller="SongChooseCtrl" class="well">

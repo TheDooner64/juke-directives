@@ -7,8 +7,8 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="song in songs" ng-class="{active: isCurrent(song)}">
-			<!-- td>
+		<tr ng-repeat="song in songs" ng-class="{active: isCurrent(song)}" double-click = "start(song)">
+			<!-- <td>
 				<button ng-hide="isCurrent(song)" ng-click="start(song)" class="btn btn-default btn-xs">
 					<span class="glyphicon glyphicon-play"></span>
 				</button>
