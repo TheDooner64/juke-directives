@@ -7,11 +7,9 @@ app.directive('myPlayer', function(PlayerFactory) {
       scope.isPlaying = PlayerFactory.isPlaying;
       scope.forward = PlayerFactory.next;
       scope.back = PlayerFactory.previous;
-
       scope.getPercent = function () {
         return (100 * PlayerFactory.getProgress()) + '%';
       };
-
       scope.toggle = function () {
         if (PlayerFactory.isPlaying()) PlayerFactory.pause();
         else PlayerFactory.resume();
